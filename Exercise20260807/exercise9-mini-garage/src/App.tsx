@@ -1,5 +1,5 @@
 import { useState, type SubmitEvent } from "react";
-import carImage from "../public/favicon.svg";
+import carImage from "/favicon.svg";
 
 type Car = {
   id: number;
@@ -66,6 +66,8 @@ function App() {
         <header className="mb-8 text-center">
           <div className="flex w-full flex-row items-center justify-center gap-4">
             <img
+              tabIndex={0}
+              aria-label="Logo bild för Mini garage"
               src={carImage}
               alt="Car"
               className="h-20 w-20 object-contain" />
@@ -73,7 +75,7 @@ function App() {
               MiniGarage
             </h1>
           </div>
-          <p className="mt-3 text-lg text-slate-600">
+          <p className="mt-3 text-lg text-slate-600" tabIndex={0} aria-label={`Antal bilar i garaget: ${cars.length}`}>
             {cars.length === 0
               ? "Garaget är helt tomt"
               : `Antal bilar i garaget: ${cars.length}`}
@@ -91,6 +93,7 @@ function App() {
           )}
           <div>
             <label
+              tabIndex={0}
               htmlFor="registrationNumber"
               className="mb-1 block font-medium text-slate-700"
             >
@@ -106,11 +109,14 @@ function App() {
               }
               placeholder="ABC123"
               className="w-full rounded-lg border border-slate-300 px-3 py-2 outline-none focus:border-blue-500 focus:ring-2 focus:ring-blue-200"
+              aria-label="Ange registreringsnummer för bilen, exempelvis ABC123"
+              tabIndex={0}
             />
           </div>
 
           <div>
             <label
+              tabIndex={0}
               htmlFor="brand"
               className="mb-1 block font-medium text-slate-700"
             >
@@ -124,12 +130,15 @@ function App() {
               onChange={(event) => setBrand(event.target.value)}
               placeholder="Volvo"
               className="w-full rounded-lg border border-slate-300 px-3 py-2 outline-none focus:border-blue-500 focus:ring-2 focus:ring-blue-200"
+              aria-label="Ange bilmärke för bilen, exempelvis Volvo"
+              tabIndex={0}
             />
           </div>
 
           <button
             type="submit"
             className="w-full rounded-lg bg-blue-600 px-4 py-2 font-semibold text-white transition hover:bg-blue-700"
+            aria-label="Parkera bilen i garaget"
           >
             Parkera bil
           </button>
@@ -147,7 +156,7 @@ function App() {
                 className="flex items-center justify-between rounded-xl bg-white p-4 shadow"
               >
                 <div>
-                  <h3 className="font-bold text-slate-900">
+                  <h3 className="font-bold text-slate-900" tabIndex={0} aria-label={`Registreringsnummer: ${car.registrationNumber} bilens märke: ${car.brand}`} >
                     {car.registrationNumber}
                   </h3>
 
@@ -158,6 +167,7 @@ function App() {
                   type="button"
                   onClick={() => removeCar(car.id)}
                   className="rounded-lg bg-red-100 px-4 py-2 font-medium text-red-700 transition hover:bg-red-200"
+                  tabIndex={0} aria-label={`Ta bort bilen med registreringsnummer: ${car.registrationNumber} bilens märke: ${car.brand}`}
                 >
                   Ta bort
                 </button>

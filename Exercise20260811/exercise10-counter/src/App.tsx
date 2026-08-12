@@ -2,6 +2,7 @@ import { useState } from 'react'
 import Counter from './components/Counter'
 import './App.css'
 import CollectorProgress from './components/CollectorProgress';
+import Buttons from './components/Buttons';
 
 type Counter = {
   id: number;
@@ -20,7 +21,7 @@ const App = () => {
     setCounterArr(current => [
       ...current,
       {
-        id: arrID + 1, // ändra id-typen till string
+        id: arrID + 1,
         count: 0,
       },
     ]);
@@ -44,20 +45,8 @@ const App = () => {
         <span className="text-4xl font-bold text-cyan-400">
           Counter App
         </span>
-
         <CollectorProgress totalCount={totalCount} />
-
-        <section className="flex gap-3">
-          <button className="bg-cyan-400 font-bold w-35 text-gray-500 p-2 rounded-lg" onClick={addCounter}>
-            Add Counter
-          </button>
-          <button className="bg-cyan-400 font-bold w-35 text-gray-500 p-2 rounded-lg"
-            onClick={() => {
-              handleReset();
-            }}>
-            Reset Counters
-          </button>
-        </section>
+        <Buttons addCounter={addCounter} handleReset={handleReset} />
         <span className="text-2xl font-bold text-cyan-400">
           Number of Counters: {counterArr.length}
         </span>

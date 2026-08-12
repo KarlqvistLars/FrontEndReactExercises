@@ -19,7 +19,7 @@ src/
 └── main.tsx
 ```
 
-Sidan har tre viktiga delar.<br/>
+Sidan har förutom App tre viktiga delar.<br/>
 * __Collector progress:__ där antalet räknade klick presenteras.
 * __Buttons:__ där knapparna för att lägga till en ny counter och 'reset counters' defineras.
 * __Counter:__ här defineras varje counter som stegas upp till max 3.

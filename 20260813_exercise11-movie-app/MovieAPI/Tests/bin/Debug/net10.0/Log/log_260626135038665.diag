@@ -1,0 +1,21 @@
+2026-06-26T13:50:38.6727701+00:00 Microsoft.Testing.Platform.Builder.TestApplication INFORMATION Version: 1.9.1+cb5afc3bb9bb01ebd75b57f89e8358b914ee2a49
+2026-06-26T13:50:38.6808055+00:00 Microsoft.Testing.Platform.Builder.TestApplication INFORMATION Logging mode: asynchronous
+2026-06-26T13:50:38.6816525+00:00 Microsoft.Testing.Platform.Builder.TestApplication INFORMATION Logging level: Information
+2026-06-26T13:50:38.6816577+00:00 Microsoft.Testing.Platform.Builder.TestApplication INFORMATION CreateBuilderAsync entry time: 13:50:38.654
+2026-06-26T13:50:38.6817244+00:00 Microsoft.Testing.Platform.Builder.TestApplication INFORMATION PID: 12236
+2026-06-26T13:50:38.6817521+00:00 Microsoft.Testing.Platform.Builder.TestApplication INFORMATION Runtime information: win-x64 - .NET 10.0.9
+2026-06-26T13:50:38.6817665+00:00 Microsoft.Testing.Platform.Builder.TestApplication INFORMATION Runtime location: C:\Program Files\dotnet\shared\Microsoft.NETCore.App\10.0.9\System.Private.CoreLib.dll
+2026-06-26T13:50:38.6817761+00:00 Microsoft.Testing.Platform.Builder.TestApplication INFORMATION IsDynamicCodeSupported: True
+2026-06-26T13:50:38.6818317+00:00 Microsoft.Testing.Platform.Builder.TestApplication INFORMATION Test module: C:\PROJEKT\2026\26014_dotnetUtb\code\API\Exercise6_MovieAPI_v2Clean\MovieAPI2\Movie2.API\Movie2.Tests\bin\Debug\net10.0\Movie2.Tests.dll
+2026-06-26T13:50:38.6819772+00:00 Microsoft.Testing.Platform.Builder.TestApplication INFORMATION Command line arguments: '--server --diagnostic --diagnostic-verbosity Information --diagnostic-output-directory C:\PROJEKT\2026\26014_dotnetUtb\code\API\Exercise6_MovieAPI_v2Clean\MovieAPI2\Movie2.API\Movie2.Tests\bin\Debug\net10.0\Log --results-directory C:\PROJEKT\2026\26014_dotnetUtb\code\API\Exercise6_MovieAPI_v2Clean\MovieAPI2\Movie2.API\TestResults --client-port 64543'
+2026-06-26T13:50:38.6825760+00:00 Microsoft.Testing.Platform.Builder.TestApplication INFORMATION TESTINGPLATFORM_DEFAULT_HANG_TIMEOUT: ''
+2026-06-26T13:50:38.6977613+00:00 Microsoft.Testing.Platform.Hosts.TestHostBuilder INFORMATION Setting RegisterEnvironmentVariablesConfigurationSource: 'True'
+2026-06-26T13:50:38.7088819+00:00 Microsoft.Testing.Platform.Hosts.TestHostBuilder INFORMATION Setting PlatformExitProcessOnUnhandledException: 'False', config file: False environment variable: 
+2026-06-26T13:50:38.9029480+00:00 Microsoft.Testing.Platform.Requests.TestHostTestFrameworkInvoker INFORMATION Test framework UID: '30ea7c6e-dd24-4152-a360-1387158cd41d' Version: '3.2.2' DisplayName: 'xUnit.net v3 Microsoft.Testing.Platform test framework' Description: 'xUnit.net v3 Microsoft.Testing.Platform test framework'
+2026-06-26T13:50:38.9106799+00:00 xUnit.net INFORMATION xUnit.net v3 In-Process Runner v3.2.2+728c1dce01 (64-bit .NET 10.0.9)
+2026-06-26T13:50:38.9483387+00:00 xUnit.net INFORMATION   Discovering: Movie2.Tests
+2026-06-26T13:50:38.9808868+00:00 xUnit.net INFORMATION   Discovered:  Movie2.Tests
+2026-06-26T13:50:38.9986612+00:00 xUnit.net INFORMATION   Starting:    Movie2.Tests
+2026-06-26T13:50:39.1657534+00:00 xUnit.net INFORMATION   Finished:    Movie2.Tests (ID = 'a4aad6a72be8e7ea8ef7bddb64b6ccdef13bef17d18f945683284cb087bc936f')
+2026-06-26T13:50:39.1701337+00:00 xUnit.net INFORMATION === TEST EXECUTION SUMMARY ===
+2026-06-26T13:50:39.1739162+00:00 xUnit.net INFORMATION    Movie2.Tests  Total: 10, Errors: 0, Failed: 0, Skipped: 0, Not Run: 0, Time: 0,169s

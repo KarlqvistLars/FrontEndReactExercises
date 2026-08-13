@@ -1,0 +1,26 @@
+2026-08-13 16:18:57.490 +02:00 [INF] Acquiring an exclusive lock for migration application. See https://aka.ms/efcore-docs-migrations-lock for more information if this takes too long.
+2026-08-13 16:18:57.814 +02:00 [INF] No migrations were applied. The database is already up to date.
+2026-08-13 16:18:59.176 +02:00 [INF] Now listening on: https://localhost:7221
+2026-08-13 16:18:59.180 +02:00 [INF] Now listening on: http://localhost:5171
+2026-08-13 16:18:59.308 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2026-08-13 16:18:59.311 +02:00 [INF] Hosting environment: Development
+2026-08-13 16:18:59.312 +02:00 [INF] Content root path: C:\PROJEKT\2026\26014_dotnetUtb\code\API\Exercise6_MovieAPI_v2Clean\MovieAPI_Clean\MovieAPI\API
+2026-08-13 16:20:39.300 +02:00 [INF] Hämtar information om alla filmer
+2026-08-13 16:37:26.946 +02:00 [INF] Application is shutting down...
+2026-08-13 16:42:19.711 +02:00 [INF] Acquiring an exclusive lock for migration application. See https://aka.ms/efcore-docs-migrations-lock for more information if this takes too long.
+2026-08-13 16:42:19.821 +02:00 [INF] No migrations were applied. The database is already up to date.
+2026-08-13 16:42:20.130 +02:00 [INF] Now listening on: https://localhost:7221
+2026-08-13 16:42:20.132 +02:00 [INF] Now listening on: http://localhost:5171
+2026-08-13 16:42:20.135 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2026-08-13 16:42:20.136 +02:00 [INF] Hosting environment: Development
+2026-08-13 16:42:20.137 +02:00 [INF] Content root path: C:\PROJEKT\2026\26014_dotnetUtb\code\API\Exercise6_MovieAPI_v2Clean\MovieAPI_Clean\MovieAPI\API
+2026-08-13 16:42:31.888 +02:00 [INF] Application is shutting down...
+2026-08-13 16:42:53.521 +02:00 [INF] Acquiring an exclusive lock for migration application. See https://aka.ms/efcore-docs-migrations-lock for more information if this takes too long.
+2026-08-13 16:42:53.649 +02:00 [INF] No migrations were applied. The database is already up to date.
+2026-08-13 16:42:53.998 +02:00 [INF] Now listening on: https://localhost:7221
+2026-08-13 16:42:54.000 +02:00 [INF] Now listening on: http://localhost:5171
+2026-08-13 16:42:54.003 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2026-08-13 16:42:54.004 +02:00 [INF] Hosting environment: Development
+2026-08-13 16:42:54.005 +02:00 [INF] Content root path: C:\PROJEKT\2026\26014_dotnetUtb\code\API\Exercise6_MovieAPI_v2Clean\MovieAPI_Clean\MovieAPI\API
+2026-08-13 16:43:09.197 +02:00 [INF] Hämtar information om alla filmer
+2026-08-13 16:44:43.295 +02:00 [INF] Application is shutting down...

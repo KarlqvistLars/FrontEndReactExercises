@@ -53,7 +53,7 @@ const App = () => {
         <span className="grid grid-cols-2 gap-3 items-center">
           {counterArr.map((_, i) => (
             <Counter
-              key={`${i}-${resetCounter}`}
+              key={`${i}-${resetCounter}`} // Använd resetCounter för att tvinga omrendering vid reset
               counterID={counterArr[i].id}
               setTotalCount={setTotalCount}
               handleDeleteCounter={removeCounter}

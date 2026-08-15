@@ -57,6 +57,7 @@ namespace Movie_.Core.Data.Repositories
         }
         void IMovieRepository.Update(MovieClass movie)
         {
+            Console.WriteLine($"MovieClassId: {movie.MovieClassId}");
             _db.Update(movie);
             _db.SaveChanges();
         }

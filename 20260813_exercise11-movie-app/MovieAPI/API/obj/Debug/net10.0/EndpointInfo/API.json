@@ -774,6 +774,10 @@
             "type": "string",
             "nullable": true
           },
+          "urlMoviePic": {
+            "type": "string",
+            "nullable": true
+          },
           "synopsis": {
             "type": "string",
             "nullable": true
@@ -807,6 +811,10 @@
           "duration": {
             "type": "string",
             "nullable": true
+          },
+          "detailsId": {
+            "type": "integer",
+            "format": "int32"
           },
           "details": {
             "$ref": "#/components/schemas/MovieDetailsDto"

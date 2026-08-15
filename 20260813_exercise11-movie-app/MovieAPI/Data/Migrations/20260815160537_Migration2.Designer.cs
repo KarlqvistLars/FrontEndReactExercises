@@ -11,8 +11,8 @@ using Movie_.Data;
 namespace Data.Migrations
 {
     [DbContext(typeof(Movie2APIContext))]
-    [Migration("20260627151751_InitialCreate")]
-    partial class InitialCreate
+    [Migration("20260815160537_Migration2")]
+    partial class Migration2
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -164,6 +164,10 @@ namespace Data.Migrations
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Synopsis")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("UrlMoviePic")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "89bEPUYR0Pg=",
+  "dgSpecHash": "mwF6WrGCWO4=",
   "success": true,
-  "projectFilePath": "C:\\PROJEKT\\2026\\26014_dotnetUtb\\code\\API\\Exercise6_MovieAPI_v2Clean\\MovieAPI_Clean\\MovieAPI\\Tests\\Tests.csproj",
+  "projectFilePath": "C:\\PROJEKT\\2026\\26014_dotnetUtb\\code\\FrontEnd\\FrontEndReactExercises\\20260813_exercise11-movie-app\\MovieAPI\\Tests\\Tests.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\larsk\\.nuget\\packages\\asp.versioning.abstractions\\10.0.0\\asp.versioning.abstractions.10.0.0.nupkg.sha512",
     "C:\\Users\\larsk\\.nuget\\packages\\asp.versioning.http\\10.0.0\\asp.versioning.http.10.0.0.nupkg.sha512",

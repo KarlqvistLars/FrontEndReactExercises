@@ -1,10 +1,155 @@
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  background-color: var(--button-bg);
+  padding: 16px;
+  border-bottom: 1px solid var(--border);
+  z-index: 1000;
+}
+
+header h1, header h2 {
+  color: whitesmoke;
+  margin: 0;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+header select {
+  margin: 10px;
+  padding: 5px;
+  border-radius: 4px;
+  border: 1px solid var(--border);
+  background-color: var(--bg);
+  color: var(--text-h);
+}
+
+.movie-card {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 16px;
+  padding: 16px;
+  margin: 8px;
+  box-shadow: var(--shadow);
+  border-radius: 8px;
+  border: 2px solid var(--border);
+  background-color: whitesmoke;
+}
+
+.movie-card:hover {
+  scale: 1.02;
+  transition: all 0.3s ease-in-out;
+  box-shadow: var(--shadow);
+}
+
+.movie-card img {
+  width: auto;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.bordered-box {
+  border: 2px solid var(--border);
+  border-radius: 8px;
+  max-height: 80px;
+  overflow-y: auto;
+  padding: 8px;
+}
+
+.movie-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 80%;
+  height: 100%;
+}
+
+form {
+  display: flex;
+  flex-direction: row;
+  text-align: left;
+  background-color: var(--button-text);
+  padding: 20px;
+  font-size: 14px;
+  border: 2px solid var(--border);
+  border-radius: 8px;
+  width: 100%;
+  height: 100%;
+  gap: 8px;
+}
+
+.movie-form span {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  font-weight: bold;
+  margin-bottom: 4px;
+}
+
+.movie-form form input,
+.movie-form form textarea {
+  padding: 8px;
+  border: 1px solid var(--border);
+}
+
+img {
+  flex: auto;
+  align-self: center;
+  justify-content: center;
+  border-radius: 8px;
+}
+
+button {
+  width: 100px;
+  height: 40px;
+  font-size: 16px;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 4px;
+  background-color: var(--button-bg);
+  color: var(--button-text);
+  cursor: pointer;
+}
+
+ul {
+    padding-inline-start: 0;
+}
+
+.dialog {
+  position: fixed;
+  background-color: var(--bg);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 16px;
+  box-shadow: var(--shadow);
+  z-index: 1000;
+}
+
+.dialog p {
+  margin-bottom: 16px;
+}
+
+.dialog::backdrop {
+  background: rgb(0 0 0 / 45%);
+  backdrop-filter: blur(2px);
+}
+
 :root {
   --text: #6b6375;
   --text-h: #08060d;
-  --bg: #fff;
+  --bg: #ccc;
   --border: #e5e4e7;
+  --button-text: whitesmoke;
+  --button-bg: rgb(65, 105, 225);
   --code-bg: #f4f3ec;
-  --accent: #aa3bff;
+  --accent: rgb(193, 207, 248);
   --accent-bg: rgba(170, 59, 255, 0.1);
   --accent-border: rgba(170, 59, 255, 0.5);
   --social-bg: rgba(244, 243, 236, 0.5);
@@ -24,7 +169,6 @@
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-
   @media (max-width: 1024px) {
     font-size: 16px;
   }
@@ -36,6 +180,8 @@
     --text-h: #f3f4f6;
     --bg: #16171d;
     --border: #2e303a;
+    --button-text: royalblue;
+    --button-bg: whitesmoke;
     --code-bg: #1f2028;
     --accent: #c084fc;
     --accent-bg: rgba(192, 132, 252, 0.15);
@@ -93,19 +239,4 @@ h2 {
 }
 p {
   margin: 0;
-}
-
-code,
-.counter {
-  font-family: var(--mono);
-  display: inline-flex;
-  border-radius: 4px;
-  color: var(--text-h);
-}
-
-code {
-  font-size: 15px;
-  line-height: 135%;
-  padding: 4px 8px;
-  background: var(--code-bg);
 }

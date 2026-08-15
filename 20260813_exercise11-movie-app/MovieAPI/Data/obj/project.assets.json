@@ -2632,11 +2632,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\PROJEKT\\2026\\26014_dotnetUtb\\code\\API\\Exercise6_MovieAPI_v2Clean\\MovieAPI_Clean\\MovieAPI\\Data\\Data.csproj",
+      "projectUniqueName": "C:\\PROJEKT\\2026\\26014_dotnetUtb\\code\\FrontEnd\\FrontEndReactExercises\\20260813_exercise11-movie-app\\MovieAPI\\Data\\Data.csproj",
       "projectName": "Data",
-      "projectPath": "C:\\PROJEKT\\2026\\26014_dotnetUtb\\code\\API\\Exercise6_MovieAPI_v2Clean\\MovieAPI_Clean\\MovieAPI\\Data\\Data.csproj",
+      "projectPath": "C:\\PROJEKT\\2026\\26014_dotnetUtb\\code\\FrontEnd\\FrontEndReactExercises\\20260813_exercise11-movie-app\\MovieAPI\\Data\\Data.csproj",
       "packagesPath": "C:\\Users\\larsk\\.nuget\\packages\\",
-      "outputPath": "C:\\PROJEKT\\2026\\26014_dotnetUtb\\code\\API\\Exercise6_MovieAPI_v2Clean\\MovieAPI_Clean\\MovieAPI\\Data\\obj\\",
+      "outputPath": "C:\\PROJEKT\\2026\\26014_dotnetUtb\\code\\FrontEnd\\FrontEndReactExercises\\20260813_exercise11-movie-app\\MovieAPI\\Data\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -2659,11 +2659,11 @@
           "framework": "net10.0",
           "targetAlias": "net10.0",
           "projectReferences": {
-            "C:\\PROJEKT\\2026\\26014_dotnetUtb\\code\\API\\Exercise6_MovieAPI_v2Clean\\MovieAPI_Clean\\MovieAPI\\Contracts\\Contracts.csproj": {
-              "projectPath": "C:\\PROJEKT\\2026\\26014_dotnetUtb\\code\\API\\Exercise6_MovieAPI_v2Clean\\MovieAPI_Clean\\MovieAPI\\Contracts\\Contracts.csproj"
+            "C:\\PROJEKT\\2026\\26014_dotnetUtb\\code\\FrontEnd\\FrontEndReactExercises\\20260813_exercise11-movie-app\\MovieAPI\\Contracts\\Contracts.csproj": {
+              "projectPath": "C:\\PROJEKT\\2026\\26014_dotnetUtb\\code\\FrontEnd\\FrontEndReactExercises\\20260813_exercise11-movie-app\\MovieAPI\\Contracts\\Contracts.csproj"
             },
-            "C:\\PROJEKT\\2026\\26014_dotnetUtb\\code\\API\\Exercise6_MovieAPI_v2Clean\\MovieAPI_Clean\\MovieAPI\\Core\\Core.csproj": {
-              "projectPath": "C:\\PROJEKT\\2026\\26014_dotnetUtb\\code\\API\\Exercise6_MovieAPI_v2Clean\\MovieAPI_Clean\\MovieAPI\\Core\\Core.csproj"
+            "C:\\PROJEKT\\2026\\26014_dotnetUtb\\code\\FrontEnd\\FrontEndReactExercises\\20260813_exercise11-movie-app\\MovieAPI\\Core\\Core.csproj": {
+              "projectPath": "C:\\PROJEKT\\2026\\26014_dotnetUtb\\code\\FrontEnd\\FrontEndReactExercises\\20260813_exercise11-movie-app\\MovieAPI\\Core\\Core.csproj"
             }
           }
         }

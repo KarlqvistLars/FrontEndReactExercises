@@ -14,26 +14,27 @@ GET {{MovieAPI_HostAddress}}/api/v2/movies/{{id1}}/details
 
 ###
 
-@id2=2
+@id2=3
 GET {{MovieAPI_HostAddress}}/api/v2/movies/{{id2}}/reviews
 
 ###
 
-PUT {{MovieAPI_HostAddress}}/api/v1/movies/2
+PUT {{MovieAPI_HostAddress}}/api/v2/movies/2
 Content-Type: application/json
-
 {
+  "movieId":"2",
   "title": "Monty Python's Life of Brian",
-  "year": "1979 ",
+  "year": "1979",
   "duration": "99 min",
   "details": {
+    "urlMoviePic": "https://www.moviezine.se/wp-content/uploads/2025/02/large_original-12840.jpg",  
     "synopsis": "The film's themes of religious satire were controversial at the time of its release, drawing accusations of blasphemy and protests from some religious groups..",
     "language": "Engelska",
     "budget": "$4 million"
   },
   "actors": [
     {
-      "name": "Graham Chapman",
+      "name": "Graham II Chapman",
       "birthYear": "1941"
     },
     {
@@ -68,10 +69,11 @@ POST {{MovieAPI_HostAddress}}/api/v1/movies
 Content-Type: application/json
 
 {
-  "title": "Sällskapsresan II",
-  "year": "1989",
+  "title": "Sällskapsresan",
+  "year": "1980",
   "duration": "107 min",
   "details": {
+    "urlMoviePic": "https://www.moviezine.se/wp-content/uploads/2025/02/large_original-12840.jpg",  
     "synopsis": "Stig-Helmer åker på charterresa till den fiktiva orten Nueva Estocolmo (’Nya Stockholm’) på Gran Canaria. Huvudberättelsen kretsar kring Stig-Helmer Olsson (Lasse Åberg) och norrmannen Ole Bramserud (Jon Skolmen), som av en slump hamnar bredvid varandra på flygplanet och sedan också tvingas dela hotellrum.",
     "language": "Svenska",
     "budget": "3 MSEK"
@@ -105,5 +107,5 @@ Content-Type: application/json
 
 ###
 @delid=4
-DELETE {{MovieAPI_HostAddress}}/api/v1/movies/{{delid}}
+DELETE {{MovieAPI_HostAddress}}/api/v2/movies/{{delid}}
 

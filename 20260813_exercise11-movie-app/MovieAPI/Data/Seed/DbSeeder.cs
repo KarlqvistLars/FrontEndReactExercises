@@ -16,6 +16,7 @@ namespace Movie_.Data.Seed
             {
                 new MovieClass { Title = "De hänsynslösa (Reservoir Dogs)", Year = "1992", Duration = "99min" ,
                     Details = new MovieDetails {
+                    UrlMoviePic = "https://media.newyorker.com/photos/59d798fb5b388b33d3b0c419/master/w_1920,c_limit/Shone-Reservoir-Dogs.jpg",
                     Synopsis = "Efter ett misslyckat rån där polisen överraskar dem, flyr en grupp kriminella till en lagerlokal.",
                     Language = "Engelska",
                     Budget = "$1.2–3 million"
@@ -48,6 +49,7 @@ namespace Movie_.Data.Seed
                 },
                 new MovieClass { Title = "Monty Python's Life of Brian", Year = "1979 ", Duration = "94 min" ,
                     Details = new MovieDetails {
+                        UrlMoviePic ="https://vice-press.com/cdn/shop/files/monty-python-life-of-brian-poster-roger-motzkus.jpg",
                         Synopsis = "The film's themes of religious satire were controversial at the time of its release, " +
                         "drawing accusations of blasphemy and protests from some religious groups..",
                         Language = "Engelska",
@@ -86,6 +88,7 @@ namespace Movie_.Data.Seed
                     }
                 },
                 new MovieClass { Title = "Django Unchained", Year = "2012", Duration = "165min" ,                     Details = new MovieDetails {
+                    UrlMoviePic ="https://upload.wikimedia.org/wikipedia/en/8/8b/Django_Unchained_Poster.jpg",
                         Synopsis = "The film is a highly stylized, revisionist tribute to spaghetti Westerns, with its title referring particularly " +
                         "to the 1966 Italian film Django by Sergio Corbucci. Development of Django Unchained began in 2007, when Tarantino was writing " +
                         "a book on Corbucci. By April 2011, Tarantino sent his final draft of the script to the Weinstein Company (TWC).",

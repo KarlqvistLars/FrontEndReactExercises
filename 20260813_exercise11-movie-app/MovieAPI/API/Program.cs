@@ -6,7 +6,6 @@ using Movie_.Core.Data.Repositories;
 using Movie_.Core.DomainContracts;
 using Movie_.Core.Services;
 using Movie_.Data;
-using Movie_.Data.Seed;
 using Serilog;
 using System.Reflection;
 using ApiVersion = Asp.Versioning.ApiVersion;
@@ -24,6 +23,8 @@ namespace Movie_.API
             // Koppla upp mot SQL Server-database
             var connectionString = builder.Configuration.GetConnectionString("Movie2APIContext") ?? throw new InvalidOperationException("Connection string 'Movie2APIContext' not found.");
             builder.Services.AddDbContext<Movie2APIContext>(options => options.UseSqlServer(connectionString));
+
+
 
             builder.Host.UseSerilog((context, config) => {
                 config
@@ -103,9 +104,10 @@ namespace Movie_.API
 
             builder.Services.AddCors(options => {
                 options.AddPolicy("AllowAngular", policy => {
-                    policy.WithOrigins("http://localhost:4200")
+                    policy.WithOrigins("http://localhost:4000")
                           .AllowAnyHeader()
-                          .AllowAnyMethod();
+                          .AllowAnyMethod()
+                          .AllowCredentials();
                 });
             });
 
@@ -118,6 +120,7 @@ namespace Movie_.API
             {
                 app.MapOpenApi();
             }
+
             // Seed-logik
             using (var scope = app.Services.CreateScope())
             {
@@ -132,7 +135,7 @@ namespace Movie_.API
                     Console.WriteLine("Något fel uppstod vid kontroll ifall databasen existerar. \nSe till att SQL Server är igång och att anslutningssträngen är korrekt.");
                 }
                 // Anropar din seed-metod
-                DbSeeder.Initialize(context);
+                Data.Seed.DbSeeder.Initialize(context);
             }
 
             app.UseCors("AllowAngular");
@@ -148,7 +151,9 @@ namespace Movie_.API
 
             app.UseHttpsRedirection();
 
-            app.UseAuthorization();
+            app.UseCors("Frontend");
+
+            //app.UseAuthorization();
 
             app.MapControllers();
 

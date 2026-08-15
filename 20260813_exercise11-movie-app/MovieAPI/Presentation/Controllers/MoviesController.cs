@@ -106,7 +106,7 @@ public class MoviesController : ControllerBase
         return Ok(details);
     }
 
-    // PUT: api/movie/2
+    // PUT: api/movies/2
     /// <summary>
     /// Uppdaterar en befintlig film baserat på dess ID.
     /// </summary>

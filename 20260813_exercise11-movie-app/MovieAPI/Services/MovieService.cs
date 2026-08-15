@@ -11,7 +11,6 @@ namespace Movie_.Core.Services
         private readonly IMovieRepository _movieRepository;
         private readonly IActorRepository _actorRepository;
         private readonly IReviewRepository _reviewRepository;
-
         public MovieService(IMovieRepository movieRepository, IActorRepository actorRepository, IReviewRepository reviewRepository)
         {
             _movieRepository = movieRepository;
@@ -30,6 +29,7 @@ namespace Movie_.Core.Services
                 Year = m.Year,
                 Duration = m.Duration,
                 Details = m.Details != null ? new MovieDetailsDto {
+                    UrlMoviePic = m.Details.UrlMoviePic,
                     Synopsis = m.Details.Synopsis,
                     Language = m.Details.Language,
                     Budget = m.Details.Budget
@@ -59,6 +59,7 @@ namespace Movie_.Core.Services
                 Duration = movie?.Duration ?? string.Empty,
                 Details = movie?.Details is { } details
                 ? new MovieDetailsDto {
+                    UrlMoviePic = details.UrlMoviePic ?? string.Empty,
                     Synopsis = details.Synopsis ?? string.Empty,
                     Language = details.Language ?? string.Empty,
                     Budget = details.Budget ?? string.Empty
@@ -109,6 +110,7 @@ namespace Movie_.Core.Services
             };
             return movieDetails;
         }
+
         public async Task<IActionResult> PutMovie(int id, MovieUpdateDto movieDto)
         {
             // Hämta befintlig film inklusive dess relaterade data
@@ -116,6 +118,10 @@ namespace Movie_.Core.Services
 
             if (existingMovie == null) { return new NotFoundResult(); }
             if (movieDto == null) { return new BadRequestResult(); }
+            if (movieDto.MovieId != id)
+            {
+                return new BadRequestResult();
+            }
 
             // Uppdatera enkla fält
             existingMovie.Title = movieDto.Title;
@@ -126,24 +132,23 @@ namespace Movie_.Core.Services
             {
                 if (existingMovie.Details != null && movieDto?.Details != null)
                 {
+                    existingMovie.Details.UrlMoviePic = movieDto.Details.UrlMoviePic;
                     existingMovie.Details.Synopsis = movieDto.Details.Synopsis;
                     existingMovie.Details.Language = movieDto.Details.Language;
                     existingMovie.Details.Budget = movieDto.Details.Budget;
                 }
             }
-            // TODO: Hantera listor (Actors/Genres/Reviews) på ett korrekt sätt, t.ex. genom att jämföra befintliga och nya listor och uppdatera dem istället för att ta bort och lägga till på nytt.
-            //Hantera listor(Actors/ Genres)
-            if (existingMovie.Genres != null) { _movieRepository.Remove(existingMovie); }
+            // TODO: Hantera listor (Actors/Genres/Reviews) på ett korrekt sätt, t.ex. genom att jämföra befintliga och nya listor och uppdatera dem istället för att ta bort och lägga till på nytt. Hantera listor(Actors/ Genres)
             existingMovie.Genres = movieDto!.Genres?.Select(g => new Genre { GenreName = g.GenreName })
                 .ToList() ?? new List<Genre>();
 
             //if (existingMovie.Actors != null) { _actorRepository.Remove(existingMovie.get(existingMovie.Actors.Id)); }
-            //existingMovie.Actors = movieDto!.Actors?.Select(a => new Actor { Name = a.Name })
-            //    .ToList() ?? new List<Actor>();
+            existingMovie.Actors = movieDto!.Actors?.Select(a => new Actor { Name = a.Name })
+                .ToList() ?? new List<Actor>();
 
             //if (existingMovie.Reviews != null) { _reviewRepository.Remove(existingMovie.Reviews); }
-            //existingMovie.Reviews = movieDto!.Reviews?.Select(r => new Review { ReviewerName = r.ReviewerName, Rating = r.Rating, Comment = r.Comment })
-            //    .ToList() ?? new List<Review>();
+            existingMovie.Reviews = movieDto!.Reviews?.Select(r => new Review { ReviewerName = r.ReviewerName, Rating = r.Rating, Comment = r.Comment })
+                .ToList() ?? new List<Review>();
             _movieRepository.Update(existingMovie);
             return new NoContentResult();
         }
@@ -163,6 +168,7 @@ namespace Movie_.Core.Services
             if (movieDto.Details != null)
             {
                 movie.Details = new MovieDetails {
+                    UrlMoviePic = movieDto.Details.UrlMoviePic,
                     Synopsis = movieDto.Details.Synopsis,
                     Language = movieDto.Details.Language,
                     Budget = movieDto.Details.Budget

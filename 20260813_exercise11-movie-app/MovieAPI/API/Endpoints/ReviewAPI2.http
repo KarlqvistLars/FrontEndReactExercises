@@ -16,8 +16,8 @@ Content-Type: application/json
 {
   "title": "Monty Python's Life of Brian",
   "reviewerName": "Lars Karlqvist",
-  "comment": "Nästan rolig... hahaha.",
-  "rating": 3
+  "comment": "Väldigt rolig... hahaha.",
+  "rating": 4
 }
 
 ###

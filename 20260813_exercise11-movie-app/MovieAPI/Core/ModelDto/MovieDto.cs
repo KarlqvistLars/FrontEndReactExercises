@@ -8,6 +8,7 @@ namespace Movie_.Core.ModelDto
         public string Title { get; set; } = string.Empty;
         public string Year { get; set; } = string.Empty;
         public string Duration { get; set; } = string.Empty;
+        public int DetailsId { get; set; }
         public MovieDetailsDto? Details { get; set; } = new MovieDetailsDto();
         public List<ActorDto>? Actors { get; set; } = new List<ActorDto>();
         public List<GenreDto>? Genres { get; set; } = new List<GenreDto>();

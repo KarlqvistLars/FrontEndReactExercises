@@ -3,8 +3,8 @@
 Läs förutsättningarna [här.](https://github.com/KarlqvistLars/FrontEndReactExercises/blob/main/20260813_exercise11-movie-app/%C3%96vning%2011%20Movie%20App.pdf)
 
 ## [Skapa ett nytt vite/React project](#Skapa-ett-nytt-vite/React-project)
-## [Testa At the Movies](#Testa-At-the-Movies-genom-att)
 
+## [Testa At the Movies](#Testa-At-the-Movies-genom-att)
 
 Skapa ett nytt vite/React project med:
 ```

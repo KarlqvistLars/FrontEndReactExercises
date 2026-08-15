@@ -63,7 +63,7 @@ och kör api't med:
 ```
 dotnet run
 ```
-Gå till sidan genom
+Gå till sidan genom öppna en browser på:
 ```
 localhost:<porten där vite körs>
 ```

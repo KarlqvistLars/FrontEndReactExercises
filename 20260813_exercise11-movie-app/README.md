@@ -42,9 +42,11 @@ Node
 
 ### Testa At the Movies genom att:
 ```
-Hämta repot med: git clone https://github.com/KarlqvistLars/FrontEndReactExercises.git
+Hämta repot med:
 ```
-Gå sedan till 
+ git clone https://github.com/KarlqvistLars/FrontEndReactExercises.git
+```
+Gå sedan till:
 ```
 .../FrontEndReactExercises/20260813_exercise11-movie-app/exercise11-movie-app
 ```

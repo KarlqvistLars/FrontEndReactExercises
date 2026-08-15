@@ -2,7 +2,11 @@
 
 Läs förutsättningarna [här.](https://github.com/KarlqvistLars/FrontEndReactExercises/blob/main/20260813_exercise11-movie-app/%C3%96vning%2011%20Movie%20App.pdf)
 
-Starta ett nytt vite/React project med:
+### [Skapa ett nytt vite/React project](Skapa ett nytt vite/React project)
+### [Testa At the Movies](Testa At the Movies genom att:)
+
+
+Skapa ett nytt vite/React project med:
 ```
 npm create vite@latest my-app -- --template react-ts 
 ```
@@ -30,4 +34,9 @@ src/
 ├── utils/                # Små, rena hjälpfunktioner
 ├── types/                # Globala typer
 └── assets/               # Bilder, ikoner och typsnitt
+```
+
+### Testa At the Movies genom att:
+```
+Hämta repot med: git clone <Repo namn>
 ```

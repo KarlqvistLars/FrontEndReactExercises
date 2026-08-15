@@ -24,7 +24,7 @@ Content-Type: application/json
 {
   "movieId":"2",
   "title": "Monty Python's Life of Brian",
-  "year": "1979",
+  "year": "1978",
   "duration": "99 min",
   "details": {
     "urlMoviePic": "https://www.moviezine.se/wp-content/uploads/2025/02/large_original-12840.jpg",  

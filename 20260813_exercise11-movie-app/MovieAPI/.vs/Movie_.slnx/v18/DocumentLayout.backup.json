@@ -39,6 +39,16 @@
           "SelectedChildIndex": 5,
           "Children": [
             {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "dbo.MovieDetails.sql",
+              "DocumentMoniker": "ViewDataWindow_MSSQL__/_localdb__MSSQLLocalDB/MovieAPIDb/True/SqlTable/dbo.MovieDetails.sql",
+              "ToolTip": "ViewDataWindow_MSSQL__/_localdb__MSSQLLocalDB/MovieAPIDb/True/SqlTable/dbo.MovieDetails.sql",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
+              "WhenOpened": "2026-08-13T18:19:02.34Z",
+              "IsPinned": true
+            },
+            {
               "$type": "Bookmark",
               "Name": "ST:129:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
             },
@@ -52,17 +62,6 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "dbo.MovieDetails [Data]",
-              "DocumentMoniker": "ViewDataWindow_MSSQL__/_localdb__MSSQLLocalDB/MovieAPIDb/True/SqlTable/dbo.MovieDetails.sql",
-              "ToolTip": "dbo.MovieDetails [Data]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
-              "WhenOpened": "2026-08-13T18:19:02.34Z",
-              "IsPinned": true,
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 3,
               "Title": "MoviesController.cs",
               "DocumentMoniker": "C:\\PROJEKT\\2026\\26014_dotnetUtb\\code\\FrontEnd\\FrontEndReactExercises\\20260813_exercise11-movie-app\\MovieAPI\\Presentation\\Controllers\\MoviesController.cs",
@@ -71,8 +70,7 @@
               "RelativeToolTip": "Presentation\\Controllers\\MoviesController.cs",
               "ViewState": "AgIAAGsAAAAAAAAAAAAuwHkAAAArAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-08-14T16:52:00.701Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-08-14T16:52:00.701Z"
             },
             {
               "$type": "Document",
@@ -82,7 +80,7 @@
               "RelativeDocumentMoniker": "Data\\Repositories\\MovieRepository.cs",
               "ToolTip": "C:\\PROJEKT\\2026\\26014_dotnetUtb\\code\\FrontEnd\\FrontEndReactExercises\\20260813_exercise11-movie-app\\MovieAPI\\Data\\Repositories\\MovieRepository.cs",
               "RelativeToolTip": "Data\\Repositories\\MovieRepository.cs",
-              "ViewState": "AgIAAC4AAAAAAAAAAAAqwD0AAAAMAAAAAAAAAA==",
+              "ViewState": "AgIAAC4AAAAAAAAAAAA6wD0AAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-08-14T16:50:59.968Z",
               "EditorCaption": ""
@@ -97,18 +95,16 @@
               "RelativeToolTip": "Services\\MovieService.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAHUAAABEAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-08-14T16:50:32.996Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-08-14T16:50:32.996Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 5,
-              "Title": "dbo.Movies [Data]",
+              "Title": "dbo.Movies.sql",
               "DocumentMoniker": "ViewDataWindow_MSSQL__/_localdb__MSSQLLocalDB/MovieAPIDb/True/SqlTable/dbo.Movies.sql",
-              "ToolTip": "dbo.Movies [Data]",
+              "ToolTip": "ViewDataWindow_MSSQL__/_localdb__MSSQLLocalDB/MovieAPIDb/True/SqlTable/dbo.Movies.sql",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
-              "WhenOpened": "2026-08-14T14:24:50.842Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-08-14T14:24:50.842Z"
             },
             {
               "$type": "Document",
@@ -120,8 +116,7 @@
               "RelativeToolTip": "Core\\ModelDto\\MovieDto.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAASAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-08-14T14:15:12.848Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-08-14T14:15:12.848Z"
             },
             {
               "$type": "Document",
@@ -133,8 +128,7 @@
               "RelativeToolTip": "API\\Endpoints\\MovieAPI2.http",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAARAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003502|",
-              "WhenOpened": "2026-06-27T18:12:31.624Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-06-27T18:12:31.624Z"
             }
           ]
         },

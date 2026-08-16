@@ -6,7 +6,7 @@ Frontend övningar med React <br/>
 
 ## Quick start React/Vite project
 
-Kör 
+För att skapa ett nytt Vite projekt kör: 
 ```
-"npm create vite@latest my-app -- --template react-ts" 
+npm create vite@latest my-app -- --template react-ts
 ```

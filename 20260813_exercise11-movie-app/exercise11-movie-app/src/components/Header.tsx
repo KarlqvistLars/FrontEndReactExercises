@@ -1,4 +1,5 @@
 import { useState } from 'react';
+
 const Header = () => {
 
     const [formListFilter1, setFormListFilter1] = useState({
@@ -68,6 +69,7 @@ const Header = () => {
                 <h1>At the Movies</h1>
             </div>
             <div>
+                <button className="button" style={{ backgroundColor: "var(--accent)", color: "black" }} onClick={() => window.location.href = '/new-movie'}>Add Movie</button>
                 <select
                     value={formListFilter1.FilterId}
                     onChange={(e) => {

@@ -57,7 +57,7 @@ header select {
 .bordered-box {
   border: 2px solid var(--border);
   border-radius: 8px;
-  max-height: 80px;
+  min-height: 50px;
   overflow-y: auto;
   padding: 8px;
 }
@@ -99,6 +99,42 @@ form {
   border: 1px solid var(--border);
 }
 
+.genre-input {
+  background-color: var(--accent);
+  border: 2px solid var(--accent-border);
+  display: flex;
+  flex-direction: column;
+  pointer-events: none;
+}
+
+.movie-image-container {
+  width: 100%;
+  height: 450px;
+  display: flex;
+  justify-content: center; /* vågrätt */
+  align-items: center;     /* lodrätt */
+}
+
+.movie-image,
+.movie-image-placeholder {
+  width: 100%;
+  height: 100%;
+  border-radius: 8px;
+  display: block;
+  object-fit: contain;
+}
+
+.movie-image-placeholder {
+  display: grid;
+  place-items: center;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  border: 2px dashed #999;
+  background-color: #eee;
+  color: #666;
+}
+
 img {
   flex: auto;
   align-self: center;
@@ -107,7 +143,7 @@ img {
 }
 
 button {
-  width: 100px;
+  width: 120px;
   height: 40px;
   font-size: 16px;
   padding: 8px 16px;

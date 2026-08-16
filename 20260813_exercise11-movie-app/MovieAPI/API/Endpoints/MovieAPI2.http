@@ -65,45 +65,62 @@ Content-Type: application/json
 
 ###
 
-POST {{MovieAPI_HostAddress}}/api/v1/movies
+POST {{MovieAPI_HostAddress}}/api/v2/movies
 Content-Type: application/json
 
 {
-  "title": "Sällskapsresan",
-  "year": "1980",
-  "duration": "107 min",
-  "details": {
-    "urlMoviePic": "https://www.moviezine.se/wp-content/uploads/2025/02/large_original-12840.jpg",  
-    "synopsis": "Stig-Helmer åker på charterresa till den fiktiva orten Nueva Estocolmo (’Nya Stockholm’) på Gran Canaria. Huvudberättelsen kretsar kring Stig-Helmer Olsson (Lasse Åberg) och norrmannen Ole Bramserud (Jon Skolmen), som av en slump hamnar bredvid varandra på flygplanet och sedan också tvingas dela hotellrum.",
-    "language": "Svenska",
-    "budget": "3 MSEK"
-  },
-  "actors": [
-    {
-      "name": "Lasse Åberg",
-      "birthYear": "1940"
-    },
-    {
-      "name": "Jon Skolmen",
-      "birthYear": "1940"
-    }
-  ],
-  "genres": [
-    {
-      "genreName": "Comedy"
-    },
-    {
-      "genreName": "Satire"
-    }
-  ],
-  "reviews": [
-    {
-      "reviewerName": "Martin Söderström - Aftonbladet",
-      "comment": "Sällskapsresan – filmerna tillhör några av svensk films största framgångar någonsin. Bara den första filmen i serien sågs av 2,8 miljoner svenskar på bio – och hela serien har spelat in över 300 miljoner kronor.",
-      "rating": 4
-    }
-  ]
+"movieId":"",
+"title":"Top Gun",
+"year":"1986",
+"duration":"0",
+"details":{"urlMoviePic":"https://upload.wikimedia.org/wikipedia/en/4/46/Top_Gun_Movie.jpg",
+"synopsis":"",
+"language":"",
+"budget":"0"},
+"genres":[{"genreId":7,
+"genreName":"Action"}],
+"actors":[],
+"reviews":[]
 }
+
+###
+
+# {
+#   "title": "Sällskapsresan",
+#   "year": "1980",
+#   "duration": "107 min",
+#   "details": {
+#     "urlMoviePic": "https://www.moviezine.se/wp-content/uploads/2025/02/large_original-12840.jpg",  
+#     "synopsis": "Stig-Helmer åker på charterresa till den fiktiva orten Nueva Estocolmo (’Nya Stockholm’) på Gran Canaria. Huvudberättelsen kretsar kring Stig-Helmer Olsson (Lasse Åberg) och norrmannen Ole Bramserud (Jon Skolmen), som av en slump hamnar bredvid varandra på flygplanet och sedan också tvingas dela hotellrum.",
+#     "language": "Svenska",
+#     "budget": "3 MSEK"
+#   },
+#   "actors": [
+#     {
+#       "name": "Lasse Åberg",
+#       "birthYear": "1940"
+#     },
+#     {
+#       "name": "Jon Skolmen",
+#       "birthYear": "1940"
+#     }
+#   ],
+#   "genres": [
+#     {
+#       "genreName": "Comedy"
+#     },
+#     {
+#       "genreName": "Satire"
+#     }
+#   ],
+#   "reviews": [
+#     {
+#       "reviewerName": "Martin Söderström - Aftonbladet",
+#       "comment": "Sällskapsresan – filmerna tillhör några av svensk films största framgångar någonsin. Bara den första filmen i serien sågs av 2,8 miljoner svenskar på bio – och hela serien har spelat in över 300 miljoner kronor.",
+#       "rating": 4
+#     }
+#   ]
+# }
 
 ###
 @delid=4

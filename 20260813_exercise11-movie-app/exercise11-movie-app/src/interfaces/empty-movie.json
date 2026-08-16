@@ -1,0 +1,30 @@
+{
+  "movieId": "",
+  "title": "",
+  "year": "",
+  "duration": "",
+  "details": {
+    "urlMoviePic": "",
+    "synopsis": "",
+    "language": "",
+    "budget": ""
+  },
+  "actors": [
+    {
+      "name": "",
+      "birthYear": ""
+    }
+  ],
+  "genres": [
+    {
+      "genreName": ""
+    }
+  ],
+  "reviews": [
+    {
+      "reviewerName": "",
+      "comment": "",
+      "rating": 0
+    }
+  ]
+}

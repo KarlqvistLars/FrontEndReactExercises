@@ -19,7 +19,7 @@ const MovieCard = ({
                 <h2>{title} ({year})</h2>
                 <p><strong>Duration:</strong> {duration} minutes</p>
                 <p><strong>Synopsis:</strong></p>
-                <p className='bordered-box'>{details.synopsis}</p>
+                <p className='bordered-box' style={{ maxHeight: isOpen ? 'none' : '50px', overflow: 'hidden', minHeight: isOpen ? '200px' : '50px' }} >{details.synopsis}</p>
                 <p><strong>Genres:</strong> {genres.map(genre => genre.genreName).join(', ')}</p>
                 <span style={{ display: isOpen ? 'block' : 'none' }}>
                     <p><strong>Language:</strong> {details.language}</p>

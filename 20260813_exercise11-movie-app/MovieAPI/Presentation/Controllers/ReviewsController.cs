@@ -4,6 +4,8 @@ using Movie_.Contracts;
 using Movie_.Core;
 using Movie_.Core.ModelDto;
 
+namespace Movie_.Presentation.Controllers;
+
 // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
 [ApiController]
 [ApiVersion("1.0")]

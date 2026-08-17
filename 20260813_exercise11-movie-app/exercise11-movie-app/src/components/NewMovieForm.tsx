@@ -1,5 +1,5 @@
 import type { NewMovie } from '../interfaces/MovieCardProps';
-import { useRef, useState, type SyntheticEvent } from 'react';
+import { useEffect, useRef, useState, type SyntheticEvent } from 'react';
 import { Link } from 'react-router-dom';
 
 const NewMovieForm = () => {
@@ -7,6 +7,7 @@ const NewMovieForm = () => {
     // const params = new URLSearchParams(window.location.search);
     // const id = params.get("movieId");
     const url = `https://localhost:7221/api/v2/movies`;
+    const genreUrl = `https://localhost:7221/api/v2/genres`;
 
     // const [movie, setMovie] = useState<MovieCardProps | null>(null);
     const [movie, setMovie] = useState<NewMovie>({
@@ -30,23 +31,18 @@ const NewMovieForm = () => {
     const [deleteSure, setDeleteSure] = useState(false);
     const dialogRef = useRef<HTMLDialogElement>(null);
 
+
+    const [genres, setGenres] = useState<{ genreId: number; genreName: string }[]>([]);
+
+    useEffect(() => {
+        fetch(genreUrl)
+            .then(response => response.json())
+            .then(data => setGenres(data));
+    }, [genreUrl]);
+
     const genreMap: Record<number, string> = {
-        1: "Comedy",
-        2: "Satire",
-        3: "Contemporary",
-        4: "Historical",
-        5: "Fantasy",
-        6: "Sci-fi",
-        7: "Action",
-        8: "Adventure",
-        9: "Thriller",
-        10: "Horror",
-        11: "Romance",
-        12: "Drama",
-        13: "Crime",
+        ...Object.fromEntries(genres.map((genre) => [genre.genreId, genre.genreName])),
     };
-
-
     // useEffect(() => {
     //     fetch(url)
     //         .then((response) => {

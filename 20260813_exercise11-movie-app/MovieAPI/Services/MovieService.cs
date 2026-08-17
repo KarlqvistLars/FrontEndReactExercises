@@ -11,11 +11,13 @@ namespace Movie_.Core.Services
         private readonly IMovieRepository _movieRepository;
         private readonly IActorRepository _actorRepository;
         private readonly IReviewRepository _reviewRepository;
-        public MovieService(IMovieRepository movieRepository, IActorRepository actorRepository, IReviewRepository reviewRepository)
+        private readonly IGenreRepository _genreRepository;
+        public MovieService(IMovieRepository movieRepository, IActorRepository actorRepository, IReviewRepository reviewRepository, IGenreRepository genreRepository)
         {
             _movieRepository = movieRepository;
             _actorRepository = actorRepository;
             _reviewRepository = reviewRepository;
+            _genreRepository = genreRepository;
         }
         public async Task<ICollection<MovieDto>> GetMovies()
         {
@@ -162,6 +164,36 @@ namespace Movie_.Core.Services
                 Genres = new List<Genre>(),
                 Actors = new List<Actor>()
             };
+
+            Console.WriteLine($"MovieDto received: ");
+
+            //// hämta befintliga genrer från databasen för att undvika duplicering
+            //var genresFromDb = await _genreRepository.GetAllAsync();
+            //var genresForMovie = new List<Genre>();
+
+            //foreach (var incomingGenre in movie.Genres)
+            //{
+            //    var existingGenre = genresFromDb.FirstOrDefault(g =>
+            //        string.Equals(
+            //            g.GenreName.Trim(),
+            //            incomingGenre.GenreName.Trim(),
+            //            StringComparison.OrdinalIgnoreCase));
+
+            //    if (existingGenre != null)
+            //    {
+            //        // Återanvänd genren som redan finns i databasen
+            //        genresForMovie.Add(existingGenre);
+            //    } else
+            //    {
+            //        // Ny genre
+            //        genresForMovie.Add(incomingGenre);
+
+            //        // Gör att samma nya genre inte läggs till igen i samma request
+            //        //genresFromDb.Add(incomingGenre);
+            //    }
+            //}
+
+            //movie.Genres = genresForMovie;
 
 
             // Spara MovieDetails

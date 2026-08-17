@@ -34,15 +34,15 @@ bld/
 [Ll]ogs/
 
 # dotenv environment variables file
-#.env
-#.vs/
-#bin/
-#obj/
+.env
+.vs/
+bin/
+obj/
 
-/20260813_exercise11-movie-app/MovieAPI/.vs/
-/20260813_exercise11-movie-app/MovieAPI/**/.env
-/20260813_exercise11-movie-app/MovieAPI/**/bin/
-/20260813_exercise11-movie-app/MovieAPI/**/obj/
+#/20260813_exercise11-movie-app/MovieAPI/.vs/
+#/20260813_exercise11-movie-app/MovieAPI/**/.env
+#/20260813_exercise11-movie-app/MovieAPI/**/bin/
+#/20260813_exercise11-movie-app/MovieAPI/**/obj/
 
 # Others
 ~$*

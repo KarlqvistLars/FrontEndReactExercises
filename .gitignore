@@ -39,8 +39,8 @@ bld/
 #bin/
 #obj/
 
+/20260813_exercise11-movie-app/MovieAPI/.vs/
 /20260813_exercise11-movie-app/MovieAPI/**/.env
-/20260813_exercise11-movie-app/MovieAPI/**/.vs/
 /20260813_exercise11-movie-app/MovieAPI/**/bin/
 /20260813_exercise11-movie-app/MovieAPI/**/obj/
 

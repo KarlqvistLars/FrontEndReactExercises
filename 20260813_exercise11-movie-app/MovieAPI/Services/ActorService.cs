@@ -7,7 +7,7 @@ using Movie_.Core.DomainContracts;
 using Movie_.Core.ModelDto;
 using Movie_.Core.Models;
 
-namespace Movie_.API.Services
+namespace Movie_.Services
 {
     public class ActorService : IActorService
     {

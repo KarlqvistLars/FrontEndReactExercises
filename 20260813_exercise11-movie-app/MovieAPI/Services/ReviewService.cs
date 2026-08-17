@@ -1,10 +1,11 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Movie_.Contracts;
+using Movie_.Core;
 using Movie_.Core.DomainContracts;
 using Movie_.Core.ModelDto;
 using Movie_.Core.Models;
 
-namespace Movie_.Core.Services
+namespace Movie_.Services
 {
     public class ReviewService : IReviewService
     {

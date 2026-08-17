@@ -1,6 +1,7 @@
 using Asp.Versioning;
 using Microsoft.AspNetCore.Mvc;
 using Movie_.Contracts;
+using Movie_.Core;
 using Movie_.Core.ModelDto;
 
 namespace Movie_.Presentation.Controllers;
@@ -37,5 +38,33 @@ public class GenresController : ControllerBase
             return NotFound();
         }
         return Ok(genres);
+    }
+
+    [HttpGet("{genreId}")]
+    [ApiVersion("1.0")]
+    [ApiVersion("2.0")]
+    public async Task<ActionResult<GenreDto>> GetGenre(int genreId)
+    {
+        var genre = await _genreService.GetGenre(genreId);
+        if (genre == null)
+        {
+            return NotFound();
+        }
+        return Ok(genre);
+    }
+
+    // POST: api/genres
+    /// <summary>
+    /// Skapar en ny skådespelare.
+    /// </summary>
+    /// <param name="actor">Skådespelaren som ska skapas.</param>
+    /// <returns>Status och den skapade skådespelaren.</returns>
+    [HttpPost]
+    [ApiVersion("1.0")]
+    [ApiVersion("2.0")]
+    public async Task<ActionResult<GenreDto>> PostGenre(GenreCreateDto genre)
+    {
+        var result = await _genreService.PostGenre(genre);
+        return CreatedAtAction(nameof(GetGenre), new { genreId = result.Value?.GenreId }, result.Value);
     }
 }

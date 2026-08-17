@@ -1,11 +1,10 @@
 using Microsoft.EntityFrameworkCore;
 using Microsoft.OpenApi;
-using Movie_.API.Services;
 using Movie_.Contracts;
 using Movie_.Core.DomainContracts;
-using Movie_.Core.Services;
 using Movie_.Data;
 using Movie_.Data.Repositories;
+using Movie_.Services;
 using Serilog;
 using System.Reflection;
 using ApiVersion = Asp.Versioning.ApiVersion;

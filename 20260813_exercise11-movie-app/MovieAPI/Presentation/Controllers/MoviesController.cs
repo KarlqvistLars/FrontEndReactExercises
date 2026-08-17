@@ -6,6 +6,8 @@ using Movie_.Core;
 using Movie_.Core.ModelDto;
 using System.Data;
 
+namespace Movie_.Presentation.Controllers;
+
 [ApiController]
 [ApiVersion("1.0")]
 [ApiVersion("2.0")]

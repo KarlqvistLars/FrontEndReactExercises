@@ -1,9 +1,8 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using Movie_.Core.DomainContracts;
 using Movie_.Core.Models;
-using Movie_.Data;
 
-namespace Movie_.Core.Data.Repositories
+namespace Movie_.Data.Repositories
 {
     public class ActorRepository : IActorRepository
     {

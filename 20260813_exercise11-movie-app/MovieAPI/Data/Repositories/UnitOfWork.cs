@@ -1,7 +1,6 @@
 ﻿using Movie_.Core.DomainContracts;
-using Movie_.Data;
 
-namespace Movie_.Core.Data.Repositories
+namespace Movie_.Data.Repositories
 {
     public class UnitOfWork : IUnitOfWork
     {
@@ -17,6 +16,8 @@ namespace Movie_.Core.Data.Repositories
         public IReviewRepository Reviews => throw new NotImplementedException();
 
         public IActorRepository Actors => throw new NotImplementedException();
+
+        public IGenreRepository Genres => throw new NotImplementedException();
 
         public Task CompleteAsync()
         {

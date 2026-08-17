@@ -2,10 +2,10 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.OpenApi;
 using Movie_.API.Services;
 using Movie_.Contracts;
-using Movie_.Core.Data.Repositories;
 using Movie_.Core.DomainContracts;
 using Movie_.Core.Services;
 using Movie_.Data;
+using Movie_.Data.Repositories;
 using Serilog;
 using System.Reflection;
 using ApiVersion = Asp.Versioning.ApiVersion;
@@ -49,9 +49,11 @@ namespace Movie_.API
             builder.Services.AddScoped<IMovieService, MovieService>();
             builder.Services.AddScoped<IActorService, ActorService>();
             builder.Services.AddScoped<IReviewService, ReviewService>();
+            builder.Services.AddScoped<IGenreService, GenreService>();
             builder.Services.AddScoped<IMovieRepository, MovieRepository>();
             builder.Services.AddScoped<IActorRepository, ActorRepository>();
             builder.Services.AddScoped<IReviewRepository, ReviewRepository>();
+            builder.Services.AddScoped<IGenreRepository, GenreRepository>();
 
             builder.Services.AddApiVersioning(options => {
                 options.DefaultApiVersion = new ApiVersion(1, 0);

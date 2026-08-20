@@ -33,12 +33,12 @@ src/
 ├── types/                # Globala typer
 └── assets/               # Bilder, ikoner och typsnitt
 ```
+### Testa At the Movies genom att:<br>
 Installerad programvara som krävs för att prova är:
 ```
 Visual Studio 2026 – komplett IDE för Windows.
 Node
 ```
-### Testa At the Movies genom att:<br>
 Hämta repot med:
 ```
  git clone https://github.com/KarlqvistLars/FrontEndReactExercises.git

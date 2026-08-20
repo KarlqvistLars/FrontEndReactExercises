@@ -25,7 +25,7 @@ Sidan har förutom __App__ tre viktiga delar.<br/>
 * __Counter:__ här defineras varje counter som stegas upp till max 3.
 * __App:__ HuvudAppen som innehåller de övriga delarna.
 
-
 <br/>
+
 [<<< TILLBAKA](https://github.com/KarlqvistLars/FrontEndReactExercises/blob/main/README.md)
 
